@@ -1,0 +1,9 @@
+POST http://localhost:3001/notes HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlcjUiLCJpZCI6MSwiaWF0IjoxNjY3OTc4MTgxfQ.ulXAgQnNBu8yEVQityP7aX4pUd9KgSOY8AbPiOnToyk
+content-type: application/json
+
+{
+    "content": "",
+    "date": "2020-02-10T17:30:31.098Z",
+    "important": false
+}

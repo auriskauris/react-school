@@ -1,0 +1,12 @@
+FROM ubuntu:18.04 
+
+WORKDIR /mydir  
+RUN apt-get update && apt-get install -y curl
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash
+RUN apt install -y nodejs
+COPY notesfront front
+RUN cd front && npm install --silent && npm run build --silent && cd .. 
+RUN cp -r front/build build && rm -r front
+COPY backendjson . 
+RUN npm install
+CMD npx json-server -H 0.0.0.0 --static build --port=3001 --watch db.json 

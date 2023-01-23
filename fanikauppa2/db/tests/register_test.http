@@ -1,0 +1,11 @@
+POST http://localhost:3001/register HTTP/1.1
+content-type: application/json
+
+{
+    "firstname": "testeri",
+    "lastname": "testonen",
+    "password": "salasana",
+    "address": "osoite1",
+    "phone": "0450983405",
+    "email": "testing"
+}

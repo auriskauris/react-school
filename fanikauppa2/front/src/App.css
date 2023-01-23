@@ -1,0 +1,60 @@
+body {
+  background-color: violet;
+  background-image: url("https://images.pexels.com/photos/7130562/pexels-photo-7130562.jpeg?auto=compress&cs=tinysrgb&w=400");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App-header {
+  font-size: x-large;
+  color: ghostwhite;
+  font-family: fantasy;
+  background: repeating-linear-gradient(-30deg, rgb(250, 210, 216), violet, rgb(247, 247, 170), white);
+}
+
+h1 {
+  font-family: fantasy;
+  font-size: 4em;
+  color: blueviolet;
+  text-align: center;
+}
+
+.productBackground {
+  text-align: center;
+  background-color: rgba(248, 235, 196, 0.445);
+  width: 200px;
+  /* border: 10px solid green; */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3em;
+}
+
+.productAll {
+  display: flex;
+  justify-content: center;
+  /* border-color: crimson; */
+  /* border-style: solid; */
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+p {
+  color: navy;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+a:visited {
+  color: cadetblue;
+}
+
+a {
+  color: teal;
+}

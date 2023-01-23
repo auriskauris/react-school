@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  notesdemo:
+    image: my_image
+    environment:
+      DB_HOST: my_server
+      DB_USER: my_db_user
+      DB_PASS: my_pass
+      DB_DATABASE: my_db
+      DB_TYPE: mysql2
+      DB_PORT: 3306
+      PORT: 3001
+      SECRET: tosisalainensalasanainen
+
+    ports:
+      - xxxx:3001
